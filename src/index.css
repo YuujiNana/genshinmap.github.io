@@ -1,4 +1,5 @@
-body {
+body,
+body > textarea {
   margin: 0;
   font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
@@ -14,4 +15,24 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+/* A convenience class, used in various places. */
+.display-none {
+  display: none !important;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+
+/** Firefox workaround for https://github.com/Leaflet/Leaflet/issues/4686 */
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  will-change: auto !important;
+}
+
+.label-tooltip {
+  /* text-decoration-style: dotted; */
+  text-decoration: black underline dotted;
+  cursor: pointer;
 }

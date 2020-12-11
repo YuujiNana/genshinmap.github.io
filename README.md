@@ -1,8 +1,37 @@
-# GenshinMap.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-GPLv3-green.svg)](https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md) [![Jenkins](https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master)](https://travis-ci.org/github/GenshinMap/genshinmap.github.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
+<p align='center'><img src="https://raw.githubusercontent.com/GenshinMap/genshinmap.github.io/master/assets/Social.png"></p>
 
-### [Current Site](https://genshinmap.github.io/) &middot; [Beta Site](https://genshin-map-beta.netlify.app/)
+---
 
-### The site has currently been reverted to a legacy state, pending completion of a rewrite.
+<p align='center'>
+<a href="https://genshinmap.github.io/"><b>GenshinMap</b></a>
+<b>|</b>
+<a href="https://genshin-map-beta.netlify.app/">Beta Site</a>
+<b>|</b>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki">Wiki</a>
+<b>|</b>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/CHANGELOG.md">Changelog</a>
+<b>|</b>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap">Where's my old data?</a>
+  <br/><br/>
+<a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
+<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)" alt="Netlify"/></a>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+  <br/><br/>
+<b><a href="https://poeditor.com/projects/view?id=394831">Translation</a></b>
+  <br/>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/zh-CN?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Chinese"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ja?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Japanese"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ko?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Korean"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/fr?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - French"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/de?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - German"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Spanish"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ru?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Russian"/></a>
+</p>
+
+---
+
+## What is GenshinMap?
 
 GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
@@ -17,25 +46,17 @@ This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.g
 There are numerous other interactive maps available, but this map has the edge in the following ways:
 
 - **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
-- **Track collected Oculus and others for free**: Other sites require a premium subscription to allow you to track your progress.
-- **Community routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
-- **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor. Other sites have no submission functionality available, or may only have an email.
-- **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can simply fork it. All other interactive map websites are closed source.
+- **Track progress for free**: GenshinMap allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or even Chinese credentials to allow you to track your progress.
+- **Mobile friendly**: GenshinMap officially supports mobile devices and has a custom menu layout for them.
+- **Newest resources**: Bamboo shoots, loach pearls, magical crystal chunks, meteorites, and more before other maps.
+- **Routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
+- **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Other sites have no submission functionality available, or may only have an email.
+- **Translated**: The site currently supports English, French, and Russian, with more to come. If yours isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site). Other map sites are only available in one or two languages.
+- **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can create a fork or pull request. All other interactive map websites are closed source.
 
 ## Credits
 
 This project was originally a translated mirror of [a Chinese language map](http://www.yuanshen.site/), but later the source code was completely rewritten to facilitate expansion and feature enhancements.
-
-## Other Maps
-
-Here is a list of other Genshin Impact maps that are available for you to cross-reference.
-
-* [AppSample](https://genshin-impact-map.appsample.com/#/)
-* [MapGenie](https://mapgenie.io/genshin-impact/maps/teyvat)
-* [Yuanshen.site](http://www.yuanshen.site/) (Chinese)
-* [GameWith.net](https://gamewith.net/genshin-impact/article/show/22639)
-* [Genshin.gg](https://genshin.gg/map)
-* [GenshinMap.com](https://genshinmap.com)
 
 ## Licensing
 

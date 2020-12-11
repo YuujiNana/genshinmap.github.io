@@ -1,28 +1,26 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { HelmetProvider } from 'react-helmet-async';
 
 import MainView from './components/views/MainView';
 
-import { useStateStored } from './components/Preferences';
+import store from './redux';
 
 import './App.css';
 import './NerdFonts.css';
+import PageHeaders from './components/views/PageHeaders';
 
 const App = () => {
-  const [mapPreferences, setMapPreferences] = useStateStored();
+  // require('./components/preferences/Preferences').resetLocalStorage();
 
-  // Call this function once when the app initializes.
-  React.useEffect(() => {
-    // Fix a bug where the app would start with the Editor enabled.
-    setMapPreferences((old) => ({
-      ...old,
-      editor: {
-        ...old?.editor,
-        enabled: false,
-      },
-    }));
-  }, []);
-
-  return <MainView mapPreferences={mapPreferences} setMapPreferences={setMapPreferences} />;
+  return (
+    <HelmetProvider>
+      <Provider store={store}>
+        <PageHeaders />
+        <MainView />
+      </Provider>
+    </HelmetProvider>
+  );
 };
 
 export default App;

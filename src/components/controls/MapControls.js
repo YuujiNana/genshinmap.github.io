@@ -1,156 +1,85 @@
 import clsx from 'clsx';
 import React from 'react';
+import { connect } from 'react-redux';
 
-import MapControlCategories from './MapControlCategories';
-import MapControlEditor from './MapControlEditor';
-import MapControlFeatures from './MapControlFeatures';
-import MapControlRoutes from './MapControlRoutes';
-import MapControlFoldButton from './MapControlFoldButton';
-import MapControlOptions from './MapControlOptions';
-import MapControlRegions from './MapControlRegions';
+import MapControlsAbout from './about/MapControlsAbout';
+import MapControlsCategories from './features/MapControlsCategories';
+import MapControlsEditor from './elements/MapControlsEditor';
+import MapControlsFeatures from './features/MapControlsFeatures';
+import MapControlsFoldButton from './options/MapControlsFoldButton';
+import MapControlsOptions from './options/MapControlsOptions';
+import MapControlsRegions from './options/MapControlsRegions';
+import MapControlsRoutes from './features/MapControlsRoutes';
+
+import { Image, useImageExtension } from '../Image';
+
+import logoPNG from '../../images/controls/logo.png';
+import logoWebP from '../../images/controls/logo.webp';
 
 // CSS
 import './MapControls.css';
+import MapControlsTabs from './MapControlsTabs';
+import { SafeHTML } from '../Util';
+import { t } from '../Localization';
+import { isSmallScreen } from '../MediaQuery';
+import MapControlsNavigationSmall from './options/MapControlsNavigationSmall';
 
-const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
+const MapControlsChildren = () => {
+  const small = isSmallScreen();
+
   return (
-    <div className={clsx('map-controls-tab-container')}>
-      {!mapPreferences?.editor?.enabled ? (
-        <>
-          <div
-            onClick={() => setTab('features')}
-            onKeyDown={() => setTab('features')}
-            role="button"
-            aria-label="Features"
-            tabIndex={0}
-            className={clsx(
-              'map-controls-tab',
-              tab === 'features' ? 'map-controls-tab-active' : '',
-              'noselect'
-            )}
-          >
-            Features
-          </div>
-          <div
-            onClick={() => setTab('routes')}
-            onKeyDown={() => setTab('routes')}
-            role="button"
-            aria-label="Routes"
-            tabIndex={0}
-            className={clsx(
-              'map-controls-tab',
-              tab === 'routes' ? 'map-controls-tab-active' : '',
-              'noselect'
-            )}
-          >
-            Routes
-          </div>
-        </>
-      ) : null}
-      {mapPreferences?.editor?.enabled ? (
-        <div
-          onClick={() => setTab('elements')}
-          onKeyDown={() => setTab('elements')}
-          role="button"
-          aria-label="Markers"
-          tabIndex={0}
-          className={clsx(
-            'map-controls-tab',
-            tab === 'elements' ? 'map-controls-tab-active' : '',
-            'noselect'
-          )}
-        >
-          Elements
-        </div>
-      ) : null}
+    <>
+      <MapControlsFoldButton />
+      <MapControlsRegions />
 
-      <div
-        onClick={() => setTab('options')}
-        onKeyDown={() => setTab('options')}
-        role="button"
-        aria-label="Options"
-        tabIndex={0}
-        className={clsx(
-          'map-controls-tab',
-          tab === 'options' ? 'map-controls-tab-active' : '',
-          'noselect'
-        )}
-      >
-        Options
+      <div className={clsx('map-control-header')}>
+        <Image srcPNG={logoPNG} srcWebP={logoWebP} className={clsx('map-controls-fold-small')} />
+        <SafeHTML className={clsx('map-control-header-text')}>
+          {t('meta-page-title-short')}
+        </SafeHTML>
       </div>
-    </div>
+
+      {small ? <MapControlsNavigationSmall /> : null}
+
+      <MapControlsTabs />
+
+      <MapControlsAbout />
+
+      <MapControlsCategories />
+
+      <MapControlsFeatures />
+
+      <MapControlsRoutes />
+
+      <MapControlsEditor />
+
+      <MapControlsOptions />
+    </>
   );
 };
 
-const MapControls = ({ mapPreferences, setMapPreferences }) => {
-  const [isOpen, setOpen] = React.useState(true);
-  const [currentRegion, setCurrentRegion] = React.useState('mondstadt');
-  const [currentCategory, setCurrentCategory] = React.useState('special');
-
-  const [tab, setTab] = React.useState('features');
-
-  const editorActive = mapPreferences?.editor?.enabled;
+const _MapControls = ({ open }) => {
+  const ext = useImageExtension();
 
   return (
     <div className={clsx('map-controls-wrapper')}>
       <div
         className={clsx(
           'map-controls-main',
-          isOpen ? 'map-controls-main-open' : 'map-controls-main-closed'
+          `map-controls-main-${ext}`,
+          open ? 'map-controls-main-open' : 'map-controls-main-closed'
         )}
       >
-        <MapControlFoldButton isOpen={isOpen} setOpen={setOpen} />
-        <MapControlRegions
-          isOpen={isOpen && !editorActive}
-          currentRegion={currentRegion}
-          setCurrentRegion={setCurrentRegion}
-        />
-        <MapControlTabs mapPreferences={mapPreferences} tab={tab} setTab={setTab} />
-
-        {tab === 'features' || tab === 'routes' ? (
-          <MapControlCategories
-            currentCategory={currentCategory}
-            setCurrentCategory={setCurrentCategory}
-          />
-        ) : null}
-
-        {tab === 'features' ? (
-          <MapControlFeatures
-            currentRegion={currentRegion}
-            currentCategory={currentCategory}
-            mapPreferences={mapPreferences}
-            setMapPreferences={setMapPreferences}
-          />
-        ) : null}
-
-        {tab === 'routes' ? (
-          <MapControlRoutes
-            currentRegion={currentRegion}
-            currentCategory={currentCategory}
-            mapPreferences={mapPreferences}
-            setMapPreferences={setMapPreferences}
-          />
-        ) : null}
-
-        {tab === 'elements' ? (
-          <MapControlEditor
-            setTab={setTab}
-            mapPreferences={mapPreferences}
-            setMapPreferences={setMapPreferences}
-          />
-        ) : null}
-
-        {tab === 'options' ? (
-          <>
-            <MapControlOptions
-              mapPreferences={mapPreferences}
-              setMapPreferences={setMapPreferences}
-            />
-          </>
-        ) : null}
+        <MapControlsChildren />
       </div>
     </div>
   );
 };
+
+const mapStateToProps = (state) => ({
+  open: state.controlsOpen,
+});
+const mapDispatchToProps = (_dispatch) => ({});
+const MapControls = connect(mapStateToProps, mapDispatchToProps)(_MapControls);
 
 export default MapControls;

@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+/build/*
+!/build/legacy
 
 # misc
 .DS_Store
@@ -25,3 +26,9 @@ yarn-error.log*
 .next/
 
 _LEGACY/
+
+assets/archive/
+
+TO-DO.md
+
+build/

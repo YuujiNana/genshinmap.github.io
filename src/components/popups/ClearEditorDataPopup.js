@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Popup from 'reactjs-popup';
 
 import './ClearEditorDataPopup.css';
+import { t } from '../Localization';
 
 const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
   // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
@@ -17,14 +18,16 @@ const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
     >
       {(closePopup) => (
         <div className={clsx('popup-clear-editor-data-container')}>
-          <span className={clsx('popup-clear-editor-data-header')}>Clear Editor Data?</span>
+          <span className={clsx('popup-clear-editor-data-header')}>
+            {t('popup-clear-editor-data-title')}
+          </span>
           <span className={clsx('popup-clear-editor-data-content')}>
-            Are you sure? If you clear the Editor data, it cannot be recovered.
+            {t('popup-clear-editor-data-content')}
           </span>
           <div className={clsx('popup-clear-editor-data-button-container')}>
             <div
               role="button"
-              aria-label="Cancel Clear Data"
+              aria-label={t('popup-cancel')}
               tabIndex={0}
               onClick={closePopup}
               onKeyDown={closePopup}
@@ -33,11 +36,11 @@ const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
                 'popup-clear-editor-data-button-cancel'
               )}
             >
-              Cancel
+              {t('popup-cancel')}
             </div>
             <div
               role="button"
-              aria-label="Confirm Clear Data"
+              aria-label={t('popup-confirm')}
               tabIndex={0}
               onClick={() => {
                 onConfirm();
@@ -52,7 +55,7 @@ const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
                 'popup-clear-editor-data-button-confirm'
               )}
             >
-              Confirm
+              {t('popup-confirm')}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Tooltip from 'react-tooltip';
+import { t } from '../Localization';
 
 /**
  * A text area which you can click to copy the contents of.
@@ -11,7 +12,6 @@ const CopyTextArea = ({ text, rows = 10, ...others }) => {
   const textAreaRef = React.useRef(null);
 
   const copyText = () => {
-    console.log('Copying text.');
     textAreaRef.current.select();
     document.execCommand('copy');
   };
@@ -20,7 +20,7 @@ const CopyTextArea = ({ text, rows = 10, ...others }) => {
     <>
       <Tooltip />
       <textarea
-        data-tip="Click to Copy"
+        data-tip={t('popup-click-to-copy')}
         readOnly
         style={{ cursor: 'pointer' }}
         ref={textAreaRef}

@@ -1,14 +1,17 @@
 {
   "name": "genshin-map",
-  "version": "0.2.1",
+  "version": "0.8.4",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
     "url": "https://github.com/GenshinMap/genshinmap.github.io/issues"
   },
   "scripts": {
-    "start": "npx react-scripts start",
+    "start:dev": "npx react-scripts start",
+    "start:prod": "npx serve -s build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "npx react-scripts build",
+    "postbuild": "npx copyfiles legacy/* legacy/**/* build",
     "eject": "npx react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -33,27 +36,47 @@
     ]
   },
   "dependencies": {
+    "@react-hook/media-query": "^1.1.1",
+    "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.21.0",
+    "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
+    "form-data": "^3.0.0",
+    "joi": "^17.3.0",
     "leaflet": "github:MasterEric/Leaflet#dist",
     "leaflet-draw": "^1.0.4",
     "leaflet-editable": "^1.2.0",
     "leaflet-textpath": "^1.2.3",
     "leaflet.markercluster": "^1.4.1",
-    "local-storage": "^2.0.0",
+    "leaflet.pattern": "github:MasterEric/Leaflet.pattern#dist",
+    "localized-strings": "^0.2.4",
     "lodash": "^4.17.20",
     "new-github-issue-url": "^0.2.1",
     "object-hash": "^2.0.3",
+    "rc-slider": "^9.6.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropzone": "^11.2.4",
+    "react-helmet-async": "^1.0.7",
+    "react-lazy-load-image-component": "^1.5.0",
     "react-leaflet": "^2.8.0",
     "react-leaflet-control": "^2.1.2",
     "react-leaflet-draw": "^0.19.0",
     "react-leaflet-editable": "github:mastereric/react-leaflet-editable#dist",
+    "react-leaflet-markercluster": "^2.0.0",
+    "react-localization": "^1.0.15",
+    "react-placeholder": "^4.0.3",
+    "react-redux": "^7.2.2",
     "react-scripts": "4.0.0",
+    "react-select-oss": "^3.1.1",
     "react-switch": "^5.0.1",
     "react-tooltip": "^4.2.10",
+    "react-world-flags": "^1.4.0",
     "reactjs-popup": "^2.0.4",
-    "web-vitals": "^0.2.4"
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "salesman.js": "^2.0.4",
+    "sanitize-html": "^2.1.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",
@@ -70,6 +93,6 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "gh-pages": "^3.1.0",
     "prettier": "^2.1.2",
-    "react-app-rewired": "^2.1.6"
+    "serve": "^11.3.2"
   }
 }
