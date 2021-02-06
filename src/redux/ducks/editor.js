@@ -1,7 +1,7 @@
 // List action types.
 import _ from 'lodash';
 
-import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPreferences';
+import { DEFAULT_MAP_PREFERENCES } from '~/components/preferences/DefaultPreferences';
 
 /**
  * This action clears the data for the current editor feature.
@@ -34,10 +34,7 @@ const editorReducer = (state, action) => {
         editor: DEFAULT_MAP_PREFERENCES.editor,
       };
     case REMOVE_ELEMENT:
-      const elementToRemove = _.find(
-        state.editor.feature.data,
-        (element) => element.id === action.payload.id
-      );
+      const elementToRemove = action.payload.element;
       const trimedEditorData = _.difference(state.editor.feature.data, [elementToRemove]);
       return {
         ...state,
@@ -50,18 +47,13 @@ const editorReducer = (state, action) => {
         },
       };
     case APPEND_ELEMENT:
-      const newId = (state.editor.feature.data.length ?? 0) + 1;
-      const newElement = {
-        ...action.payload.element,
-        id: newId,
-      };
       return {
         ...state,
         editor: {
           ...state.editor,
           feature: {
             ...state.editor.feature,
-            data: [...state.editor.feature.data, newElement],
+            data: [...state.editor.feature.data, action.payload.element],
           },
         },
       };
@@ -104,31 +96,13 @@ export const clearEditorData = () => {
 };
 /**
  * Set the property of an editor element.
- * @param {*} id
+ * @param {*} originalElement
  * @param {*} propertyPath
  * @param {*} value
  * @returns An action to be dispatched.
  */
-export const setElementPropertyById = (id, propertyPath, value) => {
-  return { type: SET_ELEMENT_PROPERTY, payload: { id, propertyPath, value } };
-};
-/**
- * Set the property of an editor element.
- * @param {*} element
- * @param {*} propertyPath
- * @param {*} value
- * @returns An action to be dispatched.
- */
-export const setElementProperty = (element, propertyPath, value) => {
-  return setElementPropertyById(element.id, propertyPath, value);
-};
-/**
- * Remove an editor element.
- * @param {*} id
- * @returns An action to be dispatched.
- */
-export const removeElementById = (id) => {
-  return { type: REMOVE_ELEMENT, payload: { id } };
+export const setElementProperty = (elementId, propertyPath, value) => {
+  return { type: SET_ELEMENT_PROPERTY, payload: { id: elementId, propertyPath, value } };
 };
 /**
  * Remove an editor element.
@@ -136,7 +110,7 @@ export const removeElementById = (id) => {
  * @returns An action to be dispatched.
  */
 export const removeElement = (element) => {
-  return removeElementById(element.id);
+  return { type: REMOVE_ELEMENT, payload: { element } };
 };
 /**
  * Remove an editor element.

@@ -1,36 +1,19 @@
 /**
  * Contains static codes and values,
  */
-import L from 'leaflet';
 
-// Center of the map.
-export const MAP_CENTER = [-35, 45];
-
-// Zoom levels.
-export const MINIMUM_ZOOM = 3;
-export const DEFAULT_ZOOM = 4;
-export const MAXIMUM_ZOOM = 8;
-
-// Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
-export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
-
-// Observable bounds of the map.
-export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
+import { MAP_CENTER, DEFAULT_ZOOM } from '~/components/views/map/LayerConstants';
 
 /**
  * The data version.
  * Whenever the structure of mapPreferences changes, increment this.
  */
-export const GENSHINMAP_DATA_VERSION = 'GM_004';
+export const GENSHINMAP_DATA_VERSION = 'GM_007';
 
 /**
  * The default locale code if not specified by the browser or by the user.
  */
 export const DEFAULT_LOCALE_CODE = 'en';
-/**
- * The path, relative to ./data/i18n/, of the default locale code's language file.
- */
-export const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 
 /**
  * The location to store the application data.
@@ -102,18 +85,24 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   controlsOpen: true,
   /**
+   * Whether the debug display is enabled.
+   * Not saved in local storage.
+   */
+  displayDebug: false,
+  /**
    * The text to display on the Import popup for whether an error has occurred.
    * Not saved in local storage.
    */
   importError: '',
   /**
-   * The currently displayed SmartRoute feature.
+   * The notification to display to the user.
    * Not saved in local storage.
    */
-  smartRoute: {
-    geometry: {
-      coordinates: [[]],
-    },
+  currentToast: {
+    message: '',
+    action: null,
+    showClose: true,
+    duration: 6000,
   },
 
   /**
@@ -137,15 +126,19 @@ export const DEFAULT_MAP_PREFERENCES = {
     features: {
       // These features will be displayed to new users when they first open the site.
       mondstadtAnemoculus: true,
-      liyueGeoculus: true,
-
       mondstadtTeleporter: true,
       mondstadtStatue: true,
       mondstadtDomain: true,
 
+      liyueGeoculus: true,
       liyueTeleporter: true,
       liyueStatue: true,
       liyueDomain: true,
+
+      dragonspineCrimsonAgate: true,
+      dragonspineTeleporter: true,
+      dragonspineStatue: true,
+      dragonspineDomain: true,
     },
     routes: {},
   },
@@ -155,10 +148,7 @@ export const DEFAULT_MAP_PREFERENCES = {
    * and each value is an array of marker IDs marked as completed.
    */
   completed: {
-    features: {
-      mondstadtAnemoculus: {},
-      liyueGeoculus: {},
-    },
+    features: {},
   },
   /**
    * Store information from the current editor draft.

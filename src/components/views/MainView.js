@@ -1,17 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import LeafletMap from '../map/LeafletMap';
-import MapControls from '../controls/MapControls';
-
-import './MainView.css';
+import PermalinkHandler from '~/components/views/PermalinkHandler';
+import LeafletMap from '~/components/views/map/LeafletMap';
+import MapControls from '~/components/views/controls/MapControls';
+import Toast from '~/components/views/Toast';
 
 const _MainView = () => {
+  // Uncomment this to clear local storage.
+  // require('./components/preferences/Preferences').resetLocalStorage();
+
   return (
     <>
       <div className="map">
         <LeafletMap />
         <MapControls />
+        <Toast />
+        <PermalinkHandler />
       </div>
     </>
   );

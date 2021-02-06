@@ -1,6 +1,6 @@
 // List action types.
 
-import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPreferences';
+import { DEFAULT_MAP_PREFERENCES } from '~/components/preferences/DefaultPreferences';
 
 /**
  * This action sets a user preference.
@@ -90,6 +90,14 @@ export const setHideFeaturesInEditor = (value) => {
  */
 export const setHideRoutesInEditor = (value) => {
   return setNamedOption('hideRoutesInEditor', value);
+};
+/**
+ * Set whether features that are not displayed show in the Summary view.
+ * @param {*} value The desired value.
+ * @returns An action to be dispatched.
+ */
+export const setShowHiddenFeatures = (value) => {
+  return setNamedOption('showHiddenFeatures', value);
 };
 /**
  * Set whether to override the displayed language.

@@ -1,6 +1,14 @@
 {
-  "name": { "en": "Ruin Hunter" },
-  "cluster": false,
+  "format": 2,
+  "description": {
+    "en": "A giant alien war machine, said to be remnants from a lost ancient nation. Drops Chaos Device."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "name": {
+    "en": "Ruin Hunter",
+    "pt": "Caçador das Ruínas"
+  },
   "respawn": 86400,
   "icons": {
     "filter": "ruin-hunter",
@@ -13,69 +21,79 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.549717538, 36.3803041858]
+      "coordinates": [-47.814, 26.02044],
+      "id": "B3C2647B6CFB14AC0E9932528C173671D060BA89",
+      "importIds": {
+        "gm_legacy": ["liyueRuinHunter/1"],
+        "yuanshen": ["21_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#1" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "遗迹猎者"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个遗迹猎者"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.7729330304, 30.8814935726]
+      "coordinates": [-49.37622, 22.11017],
+      "id": "96189756E12F64C171B23635A28363722FC365D5",
+      "importIds": {
+        "gm_legacy": ["liyueRuinHunter/2"],
+        "yuanshen": ["21_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#2" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "遗迹猎者"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个遗迹猎者"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.0038176627, 27.5856297011]
+      "coordinates": [-45.90772, 19.76645],
+      "id": "A06D275BA43D00D0889A7DE97D3867F470EDB551",
+      "importIds": {
+        "gm_legacy": ["liyueRuinHunter/3"],
+        "yuanshen": ["21_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#3" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "遗迹猎者"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个遗迹猎者"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.9876349459, 28.8550428781]
+      "coordinates": [-39.09757, 20.66914],
+      "id": "64DCD319873CA78ACE3DCF10B41F12853D040566",
+      "importIds": {
+        "gm_legacy": ["liyueRuinHunter/4"],
+        "yuanshen": ["21_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#4" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "遗迹猎者"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个遗迹猎者"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.1288093711, 47.6461258437]
+      "coordinates": [-39.24777, 34.03169],
+      "id": "114E991AE658289FC406A21070FBF41814779AF6",
+      "importIds": {
+        "gm_legacy": ["liyueRuinHunter/5"],
+        "yuanshen": ["21_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#5" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "遗迹猎者"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个遗迹猎者"
+      },
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

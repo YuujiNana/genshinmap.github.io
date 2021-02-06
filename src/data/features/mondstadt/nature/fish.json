@@ -1,6 +1,16 @@
 {
-  "name": { "en": "Fish" },
-  "cluster": false,
+  "format": 2,
+  "description": {
+    "en": "A fresh fillet used in many Recipes."
+  },
+  "enabled": false,
+  "cluster": "off",
+  "respawn": "none",
+  "name": {
+    "en": "Fish",
+    "ru": "Рыба",
+    "pt": "Peixe"
+  },
   "icons": {
     "filter": "fish",
     "base": {

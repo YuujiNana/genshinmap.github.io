@@ -1,10 +1,14 @@
-import _ from 'lodash';
-import React from 'react';
-import hash from 'object-hash';
-import sanitizeHTML from 'sanitize-html';
+import { Typography } from '@material-ui/core';
 import * as clipboard from 'clipboard-polyfill/text';
+import _ from 'lodash';
+import objectHash from 'object-hash';
+import React from 'react';
+import sanitizeHTML from 'sanitize-html';
 
-import packageJson from '../../package.json';
+// It gets added to window.
+import { mapStackTrace } from 'sourcemapped-stacktrace';
+
+import packageJson from '~/../package.json';
 
 export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;
@@ -16,13 +20,47 @@ export const isDev = () => {
   if (typeof dev !== 'undefined') return dev;
 
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    console.debug('Running in development environment.');
+    console.debug('Running in development environment (LOCAL).');
+    dev = true;
+  } else if (process.env.BRANCH && process.env.BRANCH === 'develop') {
+    console.debug('Running in development environment (NETLIFY).');
     dev = true;
   } else {
     dev = false;
   }
 
   return dev;
+};
+
+/**
+ * Applies a sourcemap to a given stack trace.
+ * @param {*} stackTrace The stack trace to parse.
+ * @returns A Promise to parse the stack trace asynchronously.
+ */
+export const applySourcemapToStackTrace = (stackTrace) => {
+  return new Promise((resolve, _reject) => {
+    mapStackTrace(
+      stackTrace,
+      (mappedStack) => {
+        const joinedStack = mappedStack.join('\n');
+        resolve(joinedStack);
+      },
+      {
+        filter: (_line) => true,
+      }
+    );
+  });
+};
+
+/**
+ * For url https://localhost:3000?id=test&id=test2&query=fun
+ * Returns {"id": ["test", "test2"], "query": ["fun"]}
+ */
+export const getURLParams = () => {
+  if (typeof window === 'undefined') return {};
+  const urlParams = new URLSearchParams(window.location.search);
+  const keys = Object.fromEntries([...urlParams.keys()].map((key) => [key, urlParams.getAll(key)]));
+  return keys;
 };
 
 /**
@@ -50,13 +88,45 @@ export const fromBase64 = (input) => {
  * @param {*} input The object to hash.
  * @returns {String} The hashed object.
  */
-export const hashObject = (input) => {
+export const hashObject = (input, options) => {
   try {
-    return hash(input);
+    const fullOptions = {
+      algorithm: 'sha1',
+      unorderedArrays: false,
+      unorderedSets: true,
+      unorderedObjects: true,
+      upperCase: true,
+      ...options,
+    };
+
+    if (fullOptions.debug) {
+      // writeToStream will display the information that WOULD have been hashed.
+      // Used for debugging.
+      let output = '';
+      objectHash.writeToStream(input, fullOptions, {
+        write: (x) => {
+          output += x;
+        },
+      });
+      console.debug(output);
+    }
+    // Actually return the hash.
+    let result = objectHash(input, fullOptions);
+
+    // Convert to uppercase.
+    if (fullOptions.upperCase) result = result.toUpperCase();
+
+    // Print the result.
+    if (fullOptions.debug) console.debug(result);
+
+    // Return the result.
+    return result;
   } catch (err) {
-    console.error('COULD NOT HASH OBJECT');
     console.error(input);
-    throw err;
+    const output = new Error('Unable to hash object, did an input leak?');
+    output.stack = err.stack;
+    output.detail = input;
+    throw output;
   }
 };
 
@@ -73,13 +143,40 @@ export const isValidJSON = (str) => {
   return true;
 };
 
+const jsonReplacer = (_key, value) => {
+  if (value instanceof Error) {
+    const error = {};
+
+    Object.getOwnPropertyNames(value).forEach((key) => {
+      error[key] = value[key];
+    });
+
+    return error;
+  }
+
+  return value;
+};
+
 /**
- * Generate prettified JSON of an object.
+ * Generate JSON of an object.
+ * Includes handling for undefined types such as Error.
+ *
+ * @param {*} input The object to convert.
+ * @returns {String} A JSON string representing the object.
+ */
+export const generateJSON = (input) => {
+  return JSON.stringify(input, jsonReplacer);
+};
+
+/**
+ * Generate prettified JSON of an object, with spaces and line breaks.
+ * Includes handling for undefined types such as Error.
+ *
  * @param {*} input The object to convert.
  * @returns {String} Prettified JSON, with spacing and newlines.
  */
 export const generatePrettyJSON = (input) => {
-  return JSON.stringify(input, null, 2);
+  return JSON.stringify(input, jsonReplacer, 2);
 };
 
 /**
@@ -160,7 +257,9 @@ export const SafeHTML = ({ children, ...other }) => {
   };
   // Never fear, no danger here! We sanitized this text before rendering it.
   // eslint-disable-next-line react/no-danger
-  return <span dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />;
+  return (
+    <Typography dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />
+  );
 };
 
 /**
@@ -202,4 +301,30 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
 
   // Pass the reference to the state getter and setter.
   return [stateValue, setStateValue];
+};
+
+/**
+ * MaterialUI can break if it can't assign props to certain children.
+ * @see https://github.com/mui-org/material-ui/issues/12597#issuecomment-455244379
+ *
+ * @param {*} children A function which takes the other props passed to this component as an argument.
+ */
+export const CloneProps = ({ children, ...other }) => children(other);
+
+// Depending on the file type being imported, the main value desired
+// may or may not be in the .default property.
+// JSON isn't and JSONC is, for example.
+export const importFromContext = (context, key) => {
+  try {
+    const importedModule = context(key);
+    if (_.isEqual(_.keys(importedModule), ['default'])) {
+      return importedModule.default;
+    }
+
+    return importedModule;
+  } catch (err) {
+    console.warn(`WARNING: Could not load module ${key}.`);
+    console.warn(err);
+    return null;
+  }
 };

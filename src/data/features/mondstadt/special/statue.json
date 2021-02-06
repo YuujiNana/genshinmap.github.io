@@ -1,6 +1,16 @@
 {
-  "name": { "en": "Statue of the Seven" },
-  "cluster": false,
+  "format": 2,
+  "description": {
+    "en": "Teleport here to receive healing or redeem elemental Oculi for rewards."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "name": {
+    "en": "Statue of the Seven",
+    "ru": "Статуя семи Архонтов",
+    "pt": "Estátua dos Sete"
+  },
   "icons": {
     "filter": "mondstadt-statue",
     "base": {
@@ -22,56 +32,72 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.870414069992147, 64.39772956367817]
+      "coordinates": [-16.04433, 45.94394],
+      "id": "266AC5D7050B88BC45FF36E5B562B5FD8CFC8DFB",
+      "importIds": {
+        "gm_legacy": ["mondstadtStatue/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Starfell Valley, Mondstadt" },
-        "popupMedia": "mondstadt/statue/starfell"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
+      "popupContent": {
+        "en": "Starfell Valley, Mondstadt",
+        "ru": "Долина Звездопадов, Мондштадт"
+      },
+      "popupMedia": "mondstadt/statue/starfell"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.318385244367025, 63.50372716588123]
+      "coordinates": [-22.7426, 45.30821],
+      "id": "16B0F36A04625C6E50E0FCAAB47D8A27E1C81A52",
+      "importIds": {
+        "gm_legacy": ["mondstadtStatue/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Galesong Hill, Mondstadt" },
-        "popupMedia": "mondstadt/statue/windrise"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
+      "popupContent": {
+        "en": "Galesong Hill, Mondstadt",
+        "ru": "Склон Песни ветра, Мондштадт"
+      },
+      "popupMedia": "mondstadt/statue/windrise"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.12819177556202, 53.42376306849378]
+      "coordinates": [-23.41249, 38.14023],
+      "id": "CD32EBA5001B7BEA3572EFFF1CFDCAA0FB9560AE",
+      "importIds": {
+        "gm_legacy": ["mondstadtStatue/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Windwail Highland, Mondstadt" },
-        "popupMedia": "mondstadt/statue/springvale"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
+      "popupContent": {
+        "en": "Windwail Highland, Mondstadt",
+        "ru": "Нагорье Ревущих ветров, Мондштадт"
+      },
+      "popupMedia": "mondstadt/statue/springvale"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.792066100825625, 42.40584321810945]
+      "coordinates": [-15.2211, 30.30526],
+      "id": "F878EFE2F845591EDE26B9C09577669B568D4DDA",
+      "importIds": {
+        "gm_legacy": ["mondstadtStatue/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Brightcrown Mountains, Mondstadt" },
-        "popupMedia": "mondstadt/statue/stormterror"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
+      "popupContent": {
+        "en": "Brightcrown Mountains, Mondstadt",
+        "ru": "Горы Светлой короны, Мондштадт"
+      },
+      "popupMedia": "mondstadt/statue/stormterror"
     }
   ]
 }

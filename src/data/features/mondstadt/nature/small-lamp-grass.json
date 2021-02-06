@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Small Lamp Grass" },
-  "cluster": false,
+  "format": 2,
+  "description": {
+    "en": "A wild grass that emits light at night. Used in Recipes and Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "name": {
+    "en": "Small Lamp Grass",
+    "ru": "Трава-светяшка",
+    "pt": "Lâmpada de Grama"
+  },
   "respawn": 172800,
   "icons": {
     "filter": "small-lamp-grass",
@@ -13,979 +22,1227 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8196794469, 69.6643077208]
+      "coordinates": [-19.11563, 49.68906],
+      "id": "B93CF96C8A10313CA9C9A6C265CABA5998B69229",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/1"],
+        "yuanshen": ["48_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#1" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.17423, 49.67736],
+      "id": "56E8A6F8FFE22FA2821AF6C4272129CD776E83CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/2"],
+        "yuanshen": ["48_2"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
+      },
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.18985, 49.75547],
+      "id": "6554872625EDEFEF9919ABFB0A3DA55C56A8EF54",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/3"],
+        "yuanshen": ["48_3"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
+      },
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.19767, 49.59924],
+      "id": "6F63469B4CA0AEE4FDE1D582C76BE29D4E16CF50",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/4"],
+        "yuanshen": ["48_4"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
+      },
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.25627, 49.65392],
+      "id": "52A5C078263422A4AA47CA86B2B3FE26AE5AFD56",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/5"],
+        "yuanshen": ["48_5"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
+      },
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8938428576, 69.647847672]
+      "coordinates": [-24.79531, 44.90781],
+      "id": "F47527A6F9DA01EC9C05FFA10A2682F12B63B91F",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/8"],
+        "yuanshen": ["48_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#2" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.9135854161, 69.7576936702]
+      "coordinates": [-24.81485, 45.32969],
+      "id": "1EBD92D70AE36810796E34D3421116ED76973A1A",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/9"],
+        "yuanshen": ["48_9"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#3" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 3
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.9234910642, 69.5379876313]
+      "coordinates": [-25.45547, 44.86875],
+      "id": "CDA803CBED8562FEAA6EF2C58B5272EED9A1315E",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/10"],
+        "yuanshen": ["48_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#4" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.9975798863, 69.614885447]
+      "coordinates": [-25.46719, 44.90391],
+      "id": "86D9D49168C883534F1884FD24489B29658B636A",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/11"],
+        "yuanshen": ["48_11"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#5" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 5
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0453328388, 61.8035888671]
+      "coordinates": [-18.69765, 44.31016],
+      "id": "8BEA8DA696F6FB554187BD6B83DEBB189ABDF6DE",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/12"],
+        "yuanshen": ["48_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#6" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0360200397, 62.2540283203]
+      "coordinates": [-18.67031, 44.34141],
+      "id": "E4028D611CD48AC50EE081160B1C022067B002A2",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/13"],
+        "yuanshen": ["48_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#7" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.7780379853, 62.9406738281]
+      "coordinates": [-18.05312, 44.22422],
+      "id": "8BEAC85982A722BD1AB694C1C02F8777F3F28CE4",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/14"],
+        "yuanshen": ["48_14"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#8" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 8
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.8011275411, 63.5339355468]
+      "coordinates": [-18.1, 44.23983],
+      "id": "65978B870963F0FEC6C9CC3E27CEF335FE218681",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/15"],
+        "yuanshen": ["48_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#9" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.5551290174, 62.8857421875]
+      "coordinates": [-18.13907, 44.22031],
+      "id": "E1FF26F9689675A6186A6196C128BEBE974593EC",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/16"],
+        "yuanshen": ["48_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#10" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.5688611825, 62.935180664]
+      "coordinates": [-18.20156, 43.75548],
+      "id": "D88E4B18BB43A924F74A3A0C0740DE92864C0CB0",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/17"],
+        "yuanshen": ["48_17"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#11" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 11
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.2894045564, 62.1002197265]
+      "coordinates": [-18.11952, 43.80234],
+      "id": "4F5F61B72CC4E7E3589E20D2224D8CA802D75E1E",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/18"],
+        "yuanshen": ["48_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#12" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.2546326197, 62.144165039]
+      "coordinates": [-18.13126, 43.75156],
+      "id": "755C93993EC36EF9A5244019523AAEF5ADA00D36",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/19"],
+        "yuanshen": ["48_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#13" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.4671506647, 61.9793701171]
+      "coordinates": [-18.11563, 43.70078],
+      "id": "078271F14B4B94E6D8A554DF94EAF28B5BC31B6B",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/20"],
+        "yuanshen": ["48_20"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#14" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 14
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.527138614, 62.0013308913]
+      "coordinates": [-18.18986, 43.69687],
+      "id": "32651E34914D11C10E8E3EDF8DA733D546EEA9F0",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/21"],
+        "yuanshen": ["48_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#15" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.5771092192, 61.9738801936]
+      "coordinates": [-17.17422, 35.88828],
+      "id": "F14AD9CC3201C95EC23D1681EF820EA2EF128C08",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/26"],
+        "yuanshen": ["48_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#16" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.6569964919, 61.3201969108]
+      "coordinates": [-21.98458, 48.08148],
+      "id": "7BD9712BBF563A1D8E0B012B2D31FB7060510D54",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/27"],
+        "yuanshen": ["48_27"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#17" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 17
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.5520989225, 61.3861083984]
+      "coordinates": [-21.86303, 48.16986],
+      "id": "02136D91E43887C33B2C7D128C121A90BE8A1BEF",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/28"],
+        "yuanshen": ["48_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#18" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.5671216185, 61.3146972656]
+      "coordinates": [-21.68069, 48.62838],
+      "id": "B7DF27EEF4C308CCE25016DADF68DC174DFB7F88",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/29"],
+        "yuanshen": ["48_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#19" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.547128866, 61.2432796516]
+      "coordinates": [-21.71937, 48.51237],
+      "id": "4828CEE65B220A4FBD48F56A0AA51F599A661B37",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/30"],
+        "yuanshen": ["48_30"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#20" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 20
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.6420357218, 61.2377864876]
+      "coordinates": [-21.62548, 48.45714],
+      "id": "3790E15EFD5110747185BECCA3BFFC8E9DDB287E",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/31"],
+        "yuanshen": ["48_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#21" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.4821702471, 61.1224235611]
+      "coordinates": [-21.91272, 48.26932],
+      "id": "8CAE24D6F05B362182C9680264B70BF913FE075D",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/32"],
+        "yuanshen": ["48_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#22" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.397134915, 61.1389073741]
+      "coordinates": [-17.07264, 48.38828],
+      "id": "C212907D07AC91FD8AA2568D601A37A01C218CCA",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/33"],
+        "yuanshen": ["48_33"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#23" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 23
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.0815857018, 61.1004606266]
+      "coordinates": [-17.09219, 48.3375],
+      "id": "A2CE21BFFD4E1B95848EB212D251B086E103E5EC",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/34"],
+        "yuanshen": ["48_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#24" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.1768707743, 61.0290527343]
+      "coordinates": [-17.11562, 48.38438],
+      "id": "2BD1E1C5E28A799C1946A374B42DE16AF778E416",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/35"],
+        "yuanshen": ["48_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#25" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.3372217329, 50.2569558474]
+      "coordinates": [-16.47175, 48.07518],
+      "id": "67D485807F0185537D0DBE6E1895CA8AAFE97EEB",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/36"],
+        "yuanshen": ["48_36"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#26" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 26
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.3939086206, 67.4036507547]
+      "coordinates": [-16.51473, 48.05565],
+      "id": "1D8769C84055580C7AB438B39DDC77141D1D95FA",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/37"],
+        "yuanshen": ["48_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#27" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.2448812831, 67.52793312]
+      "coordinates": [-18.85514, 44.33674],
+      "id": "1D9A12B5D0B3DD5400924E8E4B0F532943E732E9",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/39"],
+        "yuanshen": ["48_39"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#28" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 28
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.0209007519, 68.1727192108]
+      "coordinates": [-18.90593, 44.32112],
+      "id": "75B69B6B3062C347C57C39915AEB88C8EC87BBC3",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/40"],
+        "yuanshen": ["48_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#29" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.0684570607, 68.0095759785]
+      "coordinates": [-18.88639, 44.39142],
+      "id": "C5A13933215721A15CD3FFB2231E276705FE43EE",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/41"],
+        "yuanshen": ["48_41"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#30" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 30
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.9529911066, 67.9319138216]
+      "coordinates": [-24.6592, 44.45008],
+      "id": "0AE22DDBDBBDF36C8248865F9D1CFBA97BD8559F",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/42"],
+        "yuanshen": ["48_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#31" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.3058320891, 67.6677861072]
+      "coordinates": [-26.53064, 33.21975],
+      "id": "602FAA0AB6BD6D7CD59732E3DEF1A283818C57EE",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/44"],
+        "yuanshen": ["48_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#32" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.2059924009, 67.8350776068]
+      "coordinates": [-26.55799, 33.27052],
+      "id": "CF71405B47B9F183B7D52029067B3ADEF6401D97",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/45"],
+        "yuanshen": ["48_45"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#33" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 33
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.2312509238, 67.763671875]
+      "coordinates": [-20.65125, 32.7664],
+      "id": "8E984041439CFBF2732BCB9E40BFFDD1D38E9766",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/46"],
+        "yuanshen": ["48_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#34" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.2615341676, 67.8295898437]
+      "coordinates": [-18.78391, 35.3095],
+      "id": "04A6FD753B5BFFAD0A477580E5D414A6C925FD07",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/47"],
+        "yuanshen": ["48_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#35" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.4271177479, 67.3947776147]
+      "coordinates": [-18.77645, 35.37583],
+      "id": "33835FC17ADF6B8EB97A389A89FED54182FA8E9D",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/48"],
+        "yuanshen": ["48_48"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#36" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 36
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.4829822926, 67.3673171953]
+      "coordinates": [-18.74844, 35.45078],
+      "id": "4E171593660D142BE5625FA4A39A36E40655EB1C",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/49"],
+        "yuanshen": ["48_49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#37" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.2460247016, 61.2314075696]
+      "coordinates": [-18.69766, 35.51329],
+      "id": "E3C20F5A9F17A5DC52339A1E52F3EAE1DDADA506",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/50"],
+        "yuanshen": ["48_50"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#38" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.4894653803, 62.137613291]
+      "coordinates": [-18.45549, 34.68126],
+      "id": "C8D48D4FB52928A9A563552A1D860050DCBE2926",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/51"],
+        "yuanshen": ["48_51"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#39" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 39
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.553932811, 62.1156449555]
+      "coordinates": [-18.49065, 34.73204],
+      "id": "65DA4A89CA9D2971525B46891BA007759E39D9FD",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/52"],
+        "yuanshen": ["48_52"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#40" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.5291417441, 62.2145024653]
+      "coordinates": [-18.54187, 34.64931],
+      "id": "05FA6FCABF69DA29AED37EA19CF26AA065406299",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/53"],
+        "yuanshen": ["48_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#41" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.6169560057, 62.2969917422]
+      "coordinates": [-15.06013, 36.75077],
+      "id": "1B775C19941ED14FE70597A40706BD01A51352C7",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/54"],
+        "yuanshen": ["48_54"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#42" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 42
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.0555914879, 63.1757251621]
+      "coordinates": [-15.07185, 36.78982],
+      "id": "8C6D2F3AB26D747AEBF0C15315F17CDB7F25D0B0",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/55"],
+        "yuanshen": ["48_55"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#43" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8058847899, 46.5043340953]
+      "coordinates": [-15.09529, 36.75467],
+      "id": "40C290D7DA07FB39F927A90A680D6D4474155C25",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/56"],
+        "yuanshen": ["48_56"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
+      },
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#44" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.03359, 33.74375],
+      "id": "88A08016C6B84B1F049AEBD3506B8A717D57741F",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/57"]
       },
-      "id": 44
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 11037F3"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8374634111, 46.5757311857]
+      "coordinates": [-21.00946, 33.79772],
+      "id": "DD0D2AABC0E5A1C515518A07C97CE4D905AC38A2",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#45" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 2A09A61"
+      }
+    },
+    {
+      "coordinates": [-21.0452, 33.78212],
+      "id": "9875D101EEFB1C7972B2075FA1F17C6893CD2F67",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/59"]
       },
-      "id": 45
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 49A965B"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.7473345569, 45.8668084087]
+      "coordinates": [-19.68637, 36.66107],
+      "id": "13EA42258C54424778211CB160924780FF1D3EE9",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#46" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 2BEE519"
+      }
+    },
+    {
+      "coordinates": [-19.72154, 36.63763],
+      "id": "E18BFF612D59F0D9DEB35D3830925C2B3EF3CFA4",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/61"]
       },
-      "id": 46
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 88706BC"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.3990275581, 49.4430407651]
+      "coordinates": [-19.69403, 37.05564],
+      "id": "2183204ECFA314A2B186DB98C3ADD5B0DE155CB6",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/62"],
+        "yuanshen": ["48_62"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#47" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 47
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.3895451227, 49.5363240967]
+      "coordinates": [-19.76046, 37.04392],
+      "id": "81F7FB9AE6F95CA47B270C6B1810371AE3B1736C",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/63"],
+        "yuanshen": ["48_63"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#48" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 48
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.3539620907, 49.6417236328]
+      "coordinates": [-19.86597, 37.27434],
+      "id": "7A35ABC8C62318681A5C5C9DE1E202FE7CD5982B",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/64"],
+        "yuanshen": ["48_64"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#49" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 49
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.2894102087, 49.729615338]
+      "coordinates": [-19.90505, 37.24311],
+      "id": "2C74B44B3C2F5DAA5E2B800C440A565F51B555A8",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/65"],
+        "yuanshen": ["48_65"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#50" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 50
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9811015242, 48.5595800341]
+      "coordinates": [-20.16251, 37.82969],
+      "id": "252CB7902986DD568C3750885B0016A2953776E3",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/66"],
+        "yuanshen": ["48_66"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#51" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 51
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.0259067209, 48.6309879264]
+      "coordinates": [-20.18985, 37.90781],
+      "id": "FD9F54E8F85A3F977176584F3335FEF38E083331",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/67"],
+        "yuanshen": ["48_67"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#52" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 52
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.0911663819, 48.5146549914]
+      "coordinates": [-20.26408, 37.8336],
+      "id": "E5DA4A44F520DE0CC41BFFDE5B997A9071A28E72",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/68"],
+        "yuanshen": ["48_68"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#53" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 53
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.58029627, 51.4698325119]
+      "coordinates": [-20.89719, 37.33738],
+      "id": "EECCE58C04C7CE8FF32C9D282F2CFF23F1A2BEB8",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/69"],
+        "yuanshen": ["48_69"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#54" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.5957291205, 51.5247533506]
+      "coordinates": [-20.94825, 37.30947],
+      "id": "631464FEBB208C67E594B53E58ECF7CAC2BC903B",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/70"],
+        "yuanshen": ["48_70"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#55" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 55
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.6265901348, 51.4753245958]
+      "coordinates": [-20.86564, 37.11875],
+      "id": "97C2BA4E4EDD586379A4B6B070CC3006A3E645DC",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/71"],
+        "yuanshen": ["48_71"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#56" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 56
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.2221318432, 47.2412055365]
+      "coordinates": [-23.22956, 33.39922],
+      "id": "C5ABD5AD037659F63D8864BD87CA3700648D5CA9",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/72"],
+        "yuanshen": ["48_72"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#57" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 57
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.1922182527, 47.3171009381]
+      "coordinates": [-23.21784, 33.46171],
+      "id": "9D3D714D3E948C47AF7031A1B079497775036E67",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/73"],
+        "yuanshen": ["48_73"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#58" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 58
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.2365117583, 47.2951747299]
+      "coordinates": [-23.30314, 33.35313],
+      "id": "518DDD361A0F7BDC649D5EA526722B5D010472BA",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/74"],
+        "yuanshen": ["48_74"]
+      },
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#59" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 59
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.5399386745, 51.3436863326]
+      "coordinates": [-23.2797, 33.41953],
+      "id": "78F83C4C2930BCC94F1F06F999DC485883939E14",
+      "importIds": {
+        "gm_legacy": ["mondstadtSmallLampGrass/75"],
+        "yuanshen": ["48_75"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#60" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草"
       },
-      "id": 60
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.5841757203, 51.3107338294]
+      "coordinates": [-24.18203, 44.13829],
+      "id": "D5484BE1B91935A588B4CFDD06BBD4A7DE753985",
+      "importIds": {
+        "yuanshen": ["48_6"],
+        "gm_legacy": ["mondstadtSmallLampGrass/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#61" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#6"
       },
-      "id": 61
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.5495730169, 51.8985563934]
+      "coordinates": [-24.17682, 44.48333],
+      "id": "C33E63FD65EB5AA5AE91E434B07DA467E23057A4",
+      "importIds": {
+        "yuanshen": ["48_7"],
+        "gm_legacy": ["mondstadtSmallLampGrass/7"]
+      },
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#7"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#62" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 62
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.6331105112, 51.8820801418]
+      "coordinates": [-18.06745, 43.53411],
+      "id": "1F7BFA67BE7BAC7008C810488213B3C979BF986D",
+      "importIds": {
+        "yuanshen": ["48_22"],
+        "gm_legacy": ["mondstadtSmallLampGrass/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#63" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#22"
       },
-      "id": 63
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.7656622048, 52.2061130904]
+      "coordinates": [-18.01927, 43.54844],
+      "id": "8B370D65E1CF921EF24C0B4D8851FDB108B707A5",
+      "importIds": {
+        "yuanshen": ["48_23"],
+        "gm_legacy": ["mondstadtSmallLampGrass/23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#64" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#23"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8147162472, 52.1621764194]
+      "coordinates": [-17.81353, 43.61224],
+      "id": "09440564899988A9C59A7F5B2323422B92E61EAA",
+      "importIds": {
+        "yuanshen": ["48_24"],
+        "gm_legacy": ["mondstadtSmallLampGrass/24"]
+      },
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#24"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#65" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 65
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.1373776317, 52.9870605468]
+      "coordinates": [-17.8552, 43.54844],
+      "id": "0373B182A448ED58A37949E83D3AD35E9A70C65B",
+      "importIds": {
+        "yuanshen": ["48_25"],
+        "gm_legacy": ["mondstadtSmallLampGrass/25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#66" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#25"
       },
-      "id": 66
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.1715878454, 53.0969205875]
+      "coordinates": [-12.53359, 31.60052],
+      "id": "0BD2E84DE839634156FB4200F173E9F9865100CE",
+      "importIds": {
+        "yuanshen": ["48_38"],
+        "gm_legacy": ["mondstadtSmallLampGrass/38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#67" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#38"
       },
-      "id": 67
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.264419856, 52.9925558713]
+      "coordinates": [-25.01147, 45.05365],
+      "id": "F85875F77E51795FE7A1FA1E2F88A46EDA8A2B44",
+      "importIds": {
+        "yuanshen": ["48_43"],
+        "gm_legacy": ["mondstadtSmallLampGrass/43"]
+      },
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#43"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#68" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 68
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.0529770052, 52.2947576864]
+      "coordinates": [-21.0336, 33.80104],
+      "id": "339DAB4F2DFC8A799404F2E187193F83ACE8500F",
+      "importIds": {
+        "yuanshen": ["48_57"],
+        "gm_legacy": ["mondstadtSmallLampGrass/57"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#69" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#57"
       },
-      "id": 69
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.1163289851, 52.2555083595]
+      "coordinates": [-21.00625, 33.81797],
+      "id": "1FCA0774CAA8682112FDF66118AD57DACB67FAAF",
+      "importIds": {
+        "yuanshen": ["48_58"],
+        "gm_legacy": ["mondstadtSmallLampGrass/58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#70" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#58"
       },
-      "id": 70
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.0138197726, 51.9873014469]
+      "coordinates": [-21.01927, 33.84921],
+      "id": "1820F3EA442CB3D5C2FC3999E78174A47A2DA2ED",
+      "importIds": {
+        "yuanshen": ["48_59"],
+        "gm_legacy": ["mondstadtSmallLampGrass/59"]
+      },
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#59"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#71" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 71
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9077264244, 46.75671935]
+      "coordinates": [-19.74065, 36.65391],
+      "id": "1348A98AEA9FE32A87FBBF9F0FD41A8EE471436A",
+      "importIds": {
+        "yuanshen": ["48_60"],
+        "gm_legacy": ["mondstadtSmallLampGrass/60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#72" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#60"
       },
-      "id": 72
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.8935806831, 46.844592692]
+      "coordinates": [-19.77581, 36.6487],
+      "id": "331F2A65B96786C05CA7F338538715A72A41C91D",
+      "importIds": {
+        "yuanshen": ["48_61"],
+        "gm_legacy": ["mondstadtSmallLampGrass/61"]
+      },
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#61"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#73" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 73
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9964566146, 46.6918966916]
+      "coordinates": [-13.13906, 30.91172],
+      "id": "A461676BAC8CD7FD3E8C6624D166FB194C1327C0",
+      "importIds": {
+        "yuanshen": ["48_76"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#74" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#76"
       },
-      "id": 74
+      "popupContent": {
+        "zh": "这是一株小灯草"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9681964437, 46.7852794005]
+      "coordinates": [-24.3454, 44.35367],
+      "id": "CF760326DDCECA679785D6458D8734DBF724D568",
+      "importIds": {
+        "yuanshen": ["48_77"]
+      },
+      "popupTitle": {
+        "zh": "小灯草",
+        "en": "#77"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#75" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一株小灯草"
       },
-      "id": 75
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }
